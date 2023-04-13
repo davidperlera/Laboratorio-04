@@ -11,9 +11,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="232dp"
-        android:text="Confirma tu informaciòn"
+        android:text="@string/share_tittle_text_view"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,12 +24,14 @@
         android:id="@+id/name_tittle_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/medium_gap"
-        android:text="Nombre"
+        android:layout_marginStart="@dimen/smalll_gap"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="52dp"
+        android:text="@string/name_share_text_view"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toStartOf="@+id/name_text_view"
-        app:layout_constraintHorizontal_bias="0.034"
-        app:layout_constraintStart_toStartOf="@+id/tittle_text_view"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tittle_text_view" />
 
     <TextView
@@ -36,8 +39,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/medium_gap"
-        android:text="Correo Electrònico"
+        android:text="@string/email_share_text_view"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/name_tittle_text_view"
         app:layout_constraintTop_toBottomOf="@+id/name_tittle_text_view" />
 
@@ -46,8 +50,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/medium_gap"
-        android:text="Nùmero de telèfono"
+        android:text="@string/phone_share_text_view"
         android:textStyle="bold"
+        android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="@+id/email_tiitle_text_view"
         app:layout_constraintTop_toBottomOf="@+id/email_tiitle_text_view" />
 
@@ -56,7 +61,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:background="@color/button_color"
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/black"
         android:text="COMPARTIR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -23,6 +23,8 @@ class ShareActivity : AppCompatActivity() {
         val email = intent.getStringExtra("email").toString()
         val phone = intent.getStringExtra("phone").toString()
 
+        addListeners(name, email, phone)
+
         nameTextView.text = name
         emailTextView.text = email
         phoneTextView.text = phone
@@ -34,16 +36,15 @@ class ShareActivity : AppCompatActivity() {
         phoneTextView = findViewById(R.id.phone_text_view)
         actionShare = findViewById(R.id.share_action)
     }
-    //falta el bind de la view
 
-    fun addListeners(){
+    fun addListeners(name: String, email:String, phone: String){
         actionShare.setOnClickListener {
             val intent = Intent(Intent.ACTION_SEND).apply {
                 type = "text/plain"
-                putExtra()
+                putExtra(Intent.EXTRA_TEXT, "Nombre: ${name} Correo Electrónico: ${email} Número de teléfono: ${phone}")
             }
+            startActivity(Intent.createChooser(intent, "Compartir con"))
         }
     }
 
-    //darle al text de cada view su valor nameTextView. text = variable traida
 }
