@@ -74,6 +74,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="240dp"
         android:text="TextView"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/name_tittle_text_view" />
 
@@ -83,6 +84,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="TextView"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/email_tiitle_text_view"
         app:layout_constraintTop_toTopOf="@+id/email_tiitle_text_view" />
 
@@ -92,6 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="TextView"
+        android:textColor="@color/black"
         app:layout_constraintStart_toEndOf="@+id/phone_tittle_text_view"
         app:layout_constraintTop_toTopOf="@+id/phone_tittle_text_view" />
 </androidx.constraintlayout.widget.ConstraintLayout>
